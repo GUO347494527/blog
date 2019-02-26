@@ -1,0 +1,147 @@
+body {
+    background: url("/admin/image/bg.png");
+    /*设置图片自适应屏幕*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#login {
+    width: 400px;
+    height: 260px;
+    padding: 13px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(240, 255, 255, 0.5);
+}
+/*#header {*/
+    /*position: absolute;*/
+    /*height: 80px;*/
+    /*width: 360px;*/
+/*}*/
+
+#header > p {
+    font-family: "Comic Sans MS", serif;
+    font-size: 200%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*#content {*/
+    /*margin-top: 100px;*/
+/*}*/
+
+/*.username > input {*/
+    /*font-family: iconfont;*/
+    /*position: absolute;*/
+    /*top: 12px;*/
+    /*left: 10px;*/
+/*}*/
+
+/*.password > input {*/
+    /*font-family: iconfont;*/
+    /*position: absolute;*/
+    /*top: 12px;*/
+    /*left: 10px;*/
+/*}*/
+
+#content {
+    margin-top: 20px;
+}
+
+.username {
+    margin-top: 12px;
+}
+
+.password {
+    margin-top: 12px;
+}
+
+.login_btn {
+    margin-top: 12px;
+}
+
+input {
+    height: 40px;
+    width: 230px;
+    border: none;
+    background: #e1dcd8;
+    color: rgb(98,94,91);
+    box-shadow:
+            0px 1px 1px rgba(255,255,255,0.7),
+            inset 0px 2px 5px #aaaaaa;
+    border-radius: 5px;
+}
+
+input[type*="button"]:active{
+    width: 230px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: -moz-linear-gradient(
+            top,
+            #607738 0%,
+            #7a924a 50%,
+            #94aa64 );
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#607738),
+            color-stop(0.50, #7a924a),
+            to(#94aa64));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7d8862;
+    -moz-box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    text-shadow:
+            0px 1px 0px rgba(000,000,000,0.3),
+            0px 0px 0px rgba(255,255,255,0);
+}
+
+input[type*="button"]{
+    width: 230px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: -moz-linear-gradient(
+            top,
+            #94aa64 0%,
+            #7a924a 50%,
+            #607738);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#94aa64),
+            color-stop(0.50, #7a924a),
+            to(#607738));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7d8862;
+    -moz-box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    text-shadow:
+            0px -1px 0px rgba(000,000,000,0.3),
+            0px 0px 0px rgba(255,255,255,0);
+}
