@@ -1,133 +1,202 @@
 body {
-    background: url("/admin/image/bg.png");
-    /*设置图片自适应屏幕*/
+    background: url('../image/bg.png');
+    /*è®¾ç½®å›¾ç‰‡è‡ªé€‚åº”å±å¹•*/
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
+@font-face {
+    font-family: MyFont;
+    src: url('../font/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: MyBoldFont;
+    src: url('../font/Inter-Medium.woff') format('woff');
+}
+
+/*@font-face {*/
+/*font-family: BolgFont;*/
+/*src: url('../font/JKPolarDemo.otf') format('otf');*/
+/*}*/
+
+/*@font-face {*/
+/*font-family: MySecondFont;*/
+/*src: url('../font/HelveticaNeueThn.ttf') format('ttf');*/
+/*}*/
+
+
 #login {
-    width: 400px;
-    height: 260px;
+    width: 260px;
+    height: 230px;
     padding: 13px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    border-radius: 10px;
-    background-color: rgba(240, 255, 255, 0.5);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow:
+            0px 1px 2px #aaaaaa,
+            inset 0px 2px 5px rgba(255,255,255,0.7);
 }
 /*#header {*/
-    /*position: absolute;*/
-    /*height: 80px;*/
-    /*width: 360px;*/
+/*position: absolute;*/
+/*height: 80px;*/
+/*width: 360px;*/
 /*}*/
 
 #header > p {
-    font-family: "Comic Sans MS", serif;
+
+    /*font-family: "Comic Sans MS", sans-serif;*/
+    font-family:MyFont;
     font-size: 200%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    letter-spacing: -1.5px;
+    text-align:center;
 }
 
 /*#content {*/
-    /*margin-top: 100px;*/
+/*margin-top: 100px;*/
 /*}*/
 
 /*.username > input {*/
-    /*font-family: iconfont;*/
-    /*position: absolute;*/
-    /*top: 12px;*/
-    /*left: 10px;*/
+/*font-family: iconfont;*/
+/*position: absolute;*/
+/*top: 12px;*/
+/*left: 10px;*/
 /*}*/
 
 /*.password > input {*/
-    /*font-family: iconfont;*/
-    /*position: absolute;*/
-    /*top: 12px;*/
-    /*left: 10px;*/
+/*font-family: iconfont;*/
+/*position: absolute;*/
+/*top: 12px;*/
+/*left: 10px;*/
 /*}*/
 
 #content {
+    font-family: MyFont;
     margin-top: 20px;
 }
 
 .username {
-    margin-top: 12px;
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
 }
 
 .password {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.remember {
     margin-top: 12px;
+    font-size: 5pt;
+    text-align: left;
 }
 
 .login_btn {
-    margin-top: 12px;
+    margin-top: 15px;
+    text-align: center;
 }
 
-input {
-    height: 40px;
-    width: 230px;
-    border: none;
-    background: #e1dcd8;
-    color: rgb(98,94,91);
-    box-shadow:
-            0px 1px 1px rgba(255,255,255,0.7),
-            inset 0px 2px 5px #aaaaaa;
-    border-radius: 5px;
+/*先导入图标，之后设置input的位置为relative而图标的位置为absolute，之后调整图标的left，right，top，bottom即可*/
+i.fa {
+    position: absolute; top: 8px; left: 22px;
 }
 
-input[type*="button"]:active{
+
+/*a.yourname {*/
+/*margin-right:70px;*/
+/*font-size:14px;*/
+/*letter-spacing: -0.5px;*/
+/*font-weight: bold;*/
+
+/*}*/
+
+/*a.yourpassword {*/
+/*margin-right:177px;*/
+/*font-size:14px;*/
+/*letter-spacing: -0.5px;*/
+/*font-weight: bold;*/
+/*}*/
+
+
+input[type="text"]{
+    height: 30px;
     width: 230px;
-    height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    background: -moz-linear-gradient(
-            top,
-            #607738 0%,
-            #7a924a 50%,
-            #94aa64 );
-    background: -webkit-gradient(
-            linear, left top, left bottom,
-            from(#607738),
-            color-stop(0.50, #7a924a),
-            to(#94aa64));
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #7d8862;
-    -moz-box-shadow:
-            0px -1px 0px rgba(170,170,170,1),
-            inset 0px -1px 1px rgba(255,255,255,0.7);
-    -webkit-box-shadow:
-            0px -1px 0px rgba(170,170,170,1),
-            inset 0px -1px 1px rgba(255,255,255,0.7);
+    border: #8a8787;
+    background-color: #FAFAD2;
     box-shadow:
-            0px -1px 0px rgba(170,170,170,1),
-            inset 0px -1px 1px rgba(255,255,255,0.7);
-    text-shadow:
-            0px 1px 0px rgba(000,000,000,0.3),
-            0px 0px 0px rgba(255,255,255,0);
+            0px 1px 2px rgba(255,255,255,0.7),
+            inset 0px 1px 1px #a2a2a2;
+    border-radius: 3px;
+    padding-left: 10px;
+    text-indent: 20px;
+    color: #000000;
 }
+
+input[type="password"]{
+    height: 30px;
+    width: 230px;
+    border: #8a8787;
+    background-color: #FAFAD2;
+    box-shadow:
+            0px 1px 2px rgba(255,255,255,0.7),
+            inset 0px 1px 1px #a2a2a2;
+    border-radius: 3px;
+    padding-left: 10px;
+    text-indent: 20px;
+    color: #000000;
+}
+
+input[type="checkbox"] {
+    height: 12px;
+    width: 12px;
+    margin-left:9px;
+}
+
+label {
+    vertical-align: middle;
+    font-size: 8pt;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+label.yourname{
+    font-size: 10pt;
+}
+label.yourpassword{
+    font-size: 10pt;
+}
+
+/*background: #56ab2f;   fallback for old browsers
+background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+background: linear-gradient(to right, #a8e063, #56ab2f);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 
 input[type*="button"]{
-    width: 230px;
-    height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    width: 240px;
+    height: 31px;
+    font-family: MyFont;
+    font-size: 14px;
     color: #ffffff;
     background: -moz-linear-gradient(
             top,
-            #94aa64 0%,
-            #7a924a 50%,
-            #607738);
+            #88e063 0%,
+            #3aa91a 50%,
+            #36ab2f);
     background: -webkit-gradient(
             linear, left top, left bottom,
-            from(#94aa64),
-            color-stop(0.50, #7a924a),
-            to(#607738));
+            from(#88e063),
+            color-stop(0.50, #3aa91a),
+            to(#36ab2f));
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -141,7 +210,78 @@ input[type*="button"]{
     box-shadow:
             0px 1px 0px rgba(170,170,170,1),
             inset 0px 1px 1px rgba(255,255,255,0.7);
-    text-shadow:
+    /*text-shadow:
             0px -1px 0px rgba(000,000,000,0.3),
-            0px 0px 0px rgba(255,255,255,0);
+            0px 0px 0px rgba(255,255,255,0);*/
 }
+
+input[type*="button"]:hover{
+    width: 240px;
+    height: 31px;
+    font-family:  MyFont;
+    font-size: 14px;
+    color: #ffffff;
+    background: -moz-linear-gradient(
+            top,
+            #68e063 0%,
+            #1aa91a 50%,
+            #16ab2f );
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#68e063),
+            color-stop(0.50, #1aa91a),
+            to(#16ab2f));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7d8862;
+    -moz-box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    /*text-shadow:
+            0px 1px 0px rgba(000,000,000,0.3),
+            0px 0px 0px rgba(255,255,255,0);*/
+}
+
+
+input[type*="button"]:active{
+    width: 240px;
+    height: 31px;
+    font-family: MyFont;
+    font-size: 14px;
+    color: #ffffff;
+    background: -moz-linear-gradient(
+            top,
+            #88e063 0%,
+            #3aa91a 50%,
+            #36ab2f );
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#36ab2f),
+            color-stop(0.50, #3aa91a),
+            to(#88e063));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7d8862;
+    -moz-box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    /*text-shadow:
+            0px 1px 0px rgba(000,000,000,0.3),
+            0px 0px 0px rgba(255,255,255,0);*/
+}
+
+

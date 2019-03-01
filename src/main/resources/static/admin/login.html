@@ -2,26 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Blog</title>
+    <title>Login to My Blog · LJY Blog</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <link type="text/css" rel="stylesheet" href="css/login.css">
 
 </head>
 <body>
 <div id="login">
-    <div id="header">
-        <p>Login to My Blog</p>
-    </div>
 
-    <div id="content">
-        <div class="login_info">
-            <div class="username">
-                <input type="text" id="username" value="" placeholder="用户名"/>
-            </div>
-            <div class="password">
-                <input type="password" id="password" value="" placeholder="密码"/>
-            </div>
-            <div class="login_btn">
-                <input type="button" id="login_button" value="Login">
+    <div id="header">
+        <p>Login to LJY.Blog</p>
+
+        <div id="content">
+            <div class="login_info">
+
+                <div class="username">
+                    <!--<a class="yourname"> Username or email address</a><br/>-->
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="username" value="" placeholder="Your username or Email"/>
+                </div>
+
+                <div class="password">
+                    <!--<a class="yourpassword"> Password</a><br/>-->
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="password" value="" placeholder="Your password"/>
+                </div>
+
+                <div class=remember>
+                    <input id="remember" type="checkbox" name="remember"/>Remember me
+                    <!--label for="remember" class="rememberme">Remember me</label-->
+                </div>
+
+                <div class="login_btn">
+                    <input type="button" id="login_button" value="Log in">
+                </div>
+
             </div>
         </div>
     </div>
