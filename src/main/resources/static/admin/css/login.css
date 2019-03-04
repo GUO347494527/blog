@@ -1,5 +1,5 @@
 body {
-    background: url('../image/bg.png');
+    background: url('/admin/image/bg.png');
     /*è®¾ç½®å›¾ç‰‡è‡ªé€‚åº”å±å¹•*/
     background-position: center center;
     background-repeat: no-repeat;
@@ -9,12 +9,12 @@ body {
 
 @font-face {
     font-family: MyFont;
-    src: url('../font/Inter-Regular.woff') format('woff');
+    src: url('/admin/font/Inter-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: MyBoldFont;
-    src: url('../font/Inter-Medium.woff') format('woff');
+    src: url('/admin/font/Inter-Medium.woff') format('woff');
 }
 
 /*@font-face {*/
@@ -52,7 +52,7 @@ body {
 #header > p {
 
     /*font-family: "Comic Sans MS", sans-serif;*/
-    font-family:MyFont;
+    font-family: MyFont, serif;
     font-size: 200%;
     margin-top: 0px;
     letter-spacing: -1.5px;
@@ -78,7 +78,7 @@ body {
 /*}*/
 
 #content {
-    font-family: MyFont;
+    font-family: MyFont, serif;
     margin-top: 20px;
 }
 

@@ -5,3 +5,18 @@ spring:
     static-path-pattern: /**
   resources:
     static-locations: classpath:/templates/, classpath:/static/
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    druid:
+      initial-size: 5
+      max-active: 30
+      min-idle: 5
+      max-wait: 60000
+
+
+mybatis:
+  mapper-locations: classpath:/static/mapper/*.xml
