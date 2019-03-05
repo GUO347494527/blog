@@ -1,5 +1,8 @@
 package com.ljy.blog.admin.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class User {
     private Long id;
 
@@ -59,5 +62,17 @@ public class User {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar == null ? null : avatar.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", loginName='" + loginName + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", password='" + password + '\'' +
+                ", salt='" + salt + '\'' +
+                ", avatar='" + avatar + '\'' +
+                '}';
     }
 }

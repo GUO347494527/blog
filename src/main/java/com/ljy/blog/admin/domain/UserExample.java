@@ -1,8 +1,11 @@
 package com.ljy.blog.admin.domain;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class UserExample {
     protected String orderByClause;
 
