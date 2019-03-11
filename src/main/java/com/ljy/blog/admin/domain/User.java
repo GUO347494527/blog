@@ -2,7 +2,7 @@ package com.ljy.blog.admin.domain;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class User {
     private Long id;
 

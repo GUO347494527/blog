@@ -7,8 +7,7 @@ import com.ljy.blog.admin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-@Service
+@Service("userServiceImpl")
 public class UserServiceImpl implements UserService {
 
     private final UserMapper userMapper;

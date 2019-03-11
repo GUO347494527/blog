@@ -8,4 +8,6 @@ create table t_user (
   primary key (id)
 );
 
-insert into t_user values ('00001', 'admmin', '李俊英', 'omb+V/PuKpz9ocFd3HTklQ==', '959b557c-5a8e-4362-99ef-1344e4db72fc', null);
+insert into t_user values ('10000', 'admin', '李俊英', 'omb+V/PuKpz9ocFd3HTklQ==', '959b557c-5a8e-4362-99ef-1344e4db72fc', null);
+
+
